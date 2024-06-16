@@ -1,0 +1,17 @@
+{
+  "name": "popn_new_music_describer",
+  "version": "1.0.0",
+  "description": "毎週金曜日に、[ポップンミュージック上級攻略Wiki](https://popn.wiki)の「最近の変更」ページをスクレイピングし、更新内容を出力する",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^24.1.0",
+    "node-fetch": "^3.3.2",
+    "text-encoding": "^0.7.0"
+  }
+}

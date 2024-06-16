@@ -1,0 +1,27 @@
+name: Run Scrayping
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: "0 9 * * 5" # UTC  5: 金曜
+
+jobs:
+  run-js:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+
+      - name: npm install
+        run: npm i
+
+      - name: Run JavaScript code
+        run: node script.js
